@@ -1,0 +1,18 @@
+{
+  "name": "logtail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/logtail",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/logtail"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "logger": "github:c3pobot/logger",
+    "tail": "^2.2.6"
+  }
+}
